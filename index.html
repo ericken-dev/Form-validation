@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Validation</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet"type="text/css"href="Fvalid.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="Contform">
+    <form id="validationForm">
+      <div class="input-group">
+        <label for="cont-name">Full Name</label>
+        <input type="text" placeholder="Enter Names" id="cont-name">
+        <span id="name-error" class="error"></span>
+      </div>
+      <div class="input-group">
+        <label for="cont-phone">Phone</label>
+        <input type="tel" placeholder="Enter phone" id="cont-phone">
+        <span id="phone-error" class="error"></span>
+      </div>
+      <div class="input-group">
+        <label for="cont-email">Email</label>
+        <input type="email" placeholder="Enter Email" id="cont-email">
+        <span id="Email-error" class="error"></span>
+      </div>
+      <div class="input-group">
+        <label for="cont-message">Your Message</label>
+        <textarea placeholder="Message" id="cont-message" rows="4"></textarea>
+        <span id="message-error" class="error"></span>
+      </div>
+      <button type="submit">Submit</button>
+      <span id="sub-error" class="error"></span>
+    </form>
+  </div>
+  <script src="Script.js"></script>
+  
+</body>
+</html>
